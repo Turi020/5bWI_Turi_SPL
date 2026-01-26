@@ -1,0 +1,244 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #e8f5e9; /* Light green background */
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff; /* White background for the app container */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+.loading {
+  font-size: 18px;
+  color: #555;
+}
+
+.authenticated {
+  margin-top: 20px;
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.login-form {
+  margin-top: 20px;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #606770;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.login-button,
+.google-login-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #1877f2; /* Facebook blue */
+  padding: 10px 15px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.google-login-button {
+  background-color: #4285f4;
+  background-color: #db4437; /* Google red */
+  padding: 10px 15px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #388e3c;
+  background-color: #165cdb;
+}
+
+.google-login-button:hover {
+  background-color: #357ae8;
+  background-color: #c33d2e;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #2e7d32; /* Dark green for headings */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+p {
+  color: #555;
+  font-size: 16px;
+}
+
+.login-page {
+  background-color: #f0f2f5; /* Light gray background */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background-color: #ffffff; /* White card */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card h1 {
+  color: #1877f2; /* Facebook blue */
+  font-size: 28px;
+  margin-bottom: 0.5rem;
+}
+
+.login-card p {
+  color: #606770;
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  margin: 1rem 0;
+  font-size: 14px;
+  color: #606770;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #dddfe2;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #1877f2;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+  padding: 0;
+}
+
+.link-button:hover {
+  color: #165cdb;
+}
